@@ -1012,7 +1012,6 @@
             // Sign Up User With Info (Asynchronous)
             createUserWithEmailAndPassword(auth, email, password)
             .then(cred => {
-                console.log(cred);
                 const modal = document.querySelector('#modal-signup');
                 M.Modal.getInstance(modal).close();
                 signupForm.reset();
