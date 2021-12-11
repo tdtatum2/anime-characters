@@ -3,7 +3,7 @@ var urlsToCache = [
     '/'
 ]
 
-
+console.log("Trying to install");
 self.addEventListener('install', function(event) {
     console.log('SW: Event fired.');
     // event.waitUntil(
