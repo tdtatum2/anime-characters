@@ -1085,8 +1085,10 @@
                 .then((e) => {
                     // Displaying like buttons properly. If you have liked characters on your account already, the like button will reflect that.
                     e.data().favorites.forEach((fave) => {
-                        const liked = document.querySelector('.' + fave + "-like");
-                        liked.innerHTML = '<i class="material-icons favorites">favorite</i>';
+                        if(fave) {
+                            const liked = document.querySelector('.' + fave + "-like");
+                            liked.innerHTML = '<i class="material-icons favorites">favorite</i>';
+                        }
 
                         // Displaying User Favorites list
                         const info = document.querySelector('.' + fave + "-info");
