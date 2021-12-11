@@ -1,3 +1,5 @@
+const cacheName = 'animeCharacterCache'
+
 self.addEventListener('install', function(event) {
     // Fires when the browser installs the app. Provides space to set up local environment after installation.
     console.log('SW: Event fire:' + event.type);
