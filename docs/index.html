@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Anime Characters | Home</title>
+
+    <!-- Materialize core CSS -->
+    <link href="css/materialize.min.css" rel="stylesheet">
+
+    <!-- Materialized Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Manifest File -->
+    <link href="manifest.json" rel="manifest">
+  </head>
+
+
+<body class="blue lighten-1">
+
+    <!-- NAVIGATION -->
+    <nav class="nav-extended grey lighten-1">
+        <div class="nav-wrapper">
+            <a class="brand-logo center" href="#home"><img height=75 width=75 src="imgs/icon_transparent.png"></a>
+            <ul id="nav-mobile" class=" hide-on-med-and-down">
+                <li class="right">
+                    <a class="logged-in btn waves-effect waves-light pink accent-1 white-text" href="#" id="logout">Logout</a>
+                </li>
+                <li class="right">
+                    <a class="logged-in waves-effect waves-light btn blue lighten-1 white-text modal-trigger" data-target="modal-favorites" href="#" id="favorites_button">My Favorites</a>
+                </li>
+                <li class="right">
+                    <a href="#" class="logged-out btn waves-effect waves-light blue lighten-1 white-text modal-trigger" data-target="modal-signup">Sign Up</a>
+                </li>
+                <li class="right">
+                    <a class="logged-out btn waves-effect waves-light blue lighten-1 white-text modal-trigger" href="#" data-target="modal-login">Login</a>
+                </li>              
+            </ul>
+        </div>
+        <div class="nav-content logged-in">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="black-text" href="#home">Home</a></li>
+                <li class="tab"><a class="black-text" href="#aot"><img height="50" width="50" src="imgs/aot.png" alt="Attack on Titan Logo"></a></li>
+                <li class="tab"><a class="black-text" href="#hxh"><img height="50" width="50" src="imgs/hxh.png" alt="Hunter x Hunter Logo"></a></li>
+                <li class="tab"><a class="black-text" href="#jjk"><img height="50" width="50" src="imgs/jjk.png" alt="Jujutsu Kaisen Logo"></a></li>
+                <li class="tab"><a class="black-text" href="#naruto"><img height="50" width="50" src="imgs/naruto.png" alt="Naruto Logo"></a></li>
+                <li class="tab"><a class="black-text" href="#tg"><img height="50" width="50" src="imgs/tg.png" alt="Tokoy Ghoul Logo"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <!-- SIGNUP MODAL -->
+    <div id="modal-signup" class="modal">
+        <div class="modal-content">
+            <h3>Sign Up</h3>
+            <br>
+            <form id="signup-form">
+                <div class="input-field">
+                    <input type="email" id="signup-email" required>
+                    <label for="signup-email">Email Address</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="signup-password" required>
+                    <label for="signup-password">Create a Password</label>
+                </div>
+                <button class="btn blue lighten-1">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+            <h3>Log In</h3>
+            <br>
+            <form id="login-form">
+                <div class="input-field">
+                    <input type="email" id="login-email" required>
+                    <label for="login-email">Email Address</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="login-password" required>
+                    <label for="login-password">Password</label>
+                </div>
+                <button class="btn blue lighten-1">Log In</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- FAVORITES MODAL -->
+    <div id="modal-favorites" class="modal">
+        <div class="modal-content center-align">
+            <h3>My Favorite Anime Characters</h3>
+            <br>
+            <div class="favorites-list">
+                <ul class="collapsible">
+
+                    <!-- ATTACK ON TITAN CHARACTERS -->
+                    <li class="Eren-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/aot.png" alt="Attack on Titan Logo">Eren Jaeger</div>
+                        <div class="collapsible-body">
+                            <img class="collapse-image" src="imgs/eren.jpg">
+                            <h3>Anime: Attack on Titan</h3>
+                            <span>
+                                Eren Jaeger is a former member of the Scout Regiment and the main protagonist of Attack on Titan.
+                                 He is the only son of Grisha and Carla Jaeger, the younger paternal half brother of Zeke Jaeger,
+                                  and the current holder of the Attack Titan, Founding Titan, and the War Hammer Titan.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="Mikasa-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/aot.png" alt="Attack on Titan Logo">Mikasa Ackermann</div>
+                        <div class="collapsible-body">
+                            <img class="collapse-image" src="imgs/mikasa.jpg">
+                            <h3>Anime: Attack on Titan</h3>
+                            <span>
+                                Mikasa Ackermann is one of the two deuteragonists of the series. 
+                                She is the last descendant of the Shogun clan that stayed on Paradis Island, thereby related to the
+                                Azumabito family, and holds significant political power in Hizuru.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="Armin-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/aot.png" alt="Attack on Titan Logo">Armin Arlelt</div>
+                        <div class="collapsible-body">
+                            <img class="collapse-image" src="imgs/armin.jpg">
+                            <h3>Anime: Attack on Titan</h3>
+                            <span>
+                                Armin Arlelt is a soldier in the Scout Regiment. He is also a childhood friend of Eren Jaeger
+                                 and Mikasa Ackermann, and is one of the two deuteragonists of the series. Although he appears to be
+                                  the physically weakest of the 104th Cadet Corps, his high intelligence and strategic genius makes him
+                                   an invaluable asset, though he does not consider himself to be one and is known to have low self-esteem.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="Levi-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/aot.png" alt="Attack on Titan Logo">Levi Ackermann</div>
+                        <div class="collapsible-body">
+                            <img class="collapse-image" src="imgs/levi.jpg">
+                            <h3>Anime: Attack on Titan</h3>
+                            <span>
+                                Levi Ackermann, often formally referred to as Captain Levi, is the squad Captain
+                                 of the Special Operations Squad within the Scout Regiment, and is said to be humanity's strongest soldier.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="Annie-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/aot.png" alt="Attack on Titan Logo">Annie Leonhart</div>
+                        <div class="collapsible-body">
+                            <img class="collapse-image" src="imgs/annie.gif">
+                            <h3>Anime: Attack on Titan</h3>
+                            <span>
+                                Annie Leonhart is a graduate of the 104th Cadet Corps and former member of the Military Police
+                                 Regiment. Her exceptional skill with swords and unarmed combat earned her the 4th rank, but she is 
+                                 noted to be a lone wolf that struggles to work with others.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="Historia-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/aot.png" alt="Attack on Titan Logo">Historia Reiss</div>
+                        <div class="collapsible-body">
+                            <img class="collapse-image" src="imgs/historia.jpg">
+                            <h3>Anime: Attack on Titan</h3>
+                            <span>
+                                Historia Reiss is the current Queen of the Walls. She is a graduate of the 104th Cadet Corps and a former
+                                 member of the Scout Regiment. She is also the illegitimate child of the nobleman Rod Reiss and the last
+                                  remaining member of the Reiss royal family.
+                            </span>
+                        </div>
+                    </li>
+
+
+
+                    <!-- HUNTER X HUNTER CHARACTERS -->
+                    <li class="Gon-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/hxh.png" alt="Hunter x Hunter Logo">Gon Freecs</div>
+                        <div class="collapsible-body">
+                            <img class="collapse-image" src="imgs/gon.jpg">
+                            <h3>Anime: Hunter x Hunter</h3>
+                            <span>
+                                Gon Freecss is a Rookie Hunter and the son of Ging Freecss.
+                                Finding his father is Gon's motivation in becoming a Hunter.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="Killua-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/hxh.png" alt="Hunter x Hunter Logo">Killua Zoldyck</div>
+                        <div class="collapsible-body">
+                            <img class="collapse-image" src="imgs/killua.png">
+                            <h3>Anime: Hunter x Hunter</h3>
+                            <span>
+                                Killua Zoldyck is the third child of Silva and Kikyo Zoldyck and the heir of the Zoldyck Family, until he 
+                                runs away from home and becomes a Rookie Hunter. He is the best friend of Gon Freecss and is currently traveling with Alluka Zoldyck.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="Kurapika-info" style="display: none">
+                      <div class="collapsible-header"><img height="25" width="25" src="imgs/hxh.png" alt="Hunter x Hunter Logo">Kurapika Kurta</div>
+                      <div class="collapsible-body">
+                            <img class="collapse-image" src="imgs/kurapika.gif">
+                            <h3>Anime: Hunter x Hunter</h3>
+                            <span>
+                                Kurapika is the last survivor of the Kurta Clan. He is a Blacklist Hunter and the current leader of the organization founded by Light Nostrade. 
+                                He is a member of the Zodiacs with the codename "Rat". His goal is to avenge his clan and recover the remaining Scarlet Eyes.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="Leorio-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/hxh.png" alt="Hunter x Hunter Logo">Leorio Paradinight</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/leorio.png">
+                              <h3>Anime: Hunter x Hunter</h3>
+                              <span>
+                                Leorio Paradinight is a Rookie Hunter and a member of the Zodiacs with the codename "Boar". He is currently a medical student, with a goal to become a doctor.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Hisoka-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/hxh.png" alt="Hunter x Hunter Logo">Hisoka Morow</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/hisoka.gif">
+                              <h3>Anime: Hunter x Hunter</h3>
+                              <span>
+                                Hisoka Morow is a Hunter and former member #4 of the Phantom Troupe; his physical strength ranked third
+                                 in the group. He is always in search for strong opponents, and would spare those who have great potential,
+                                  such as Gon and Killua in order for them to get strong enough to actually challenge him.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Illumi-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/hxh.png" alt="Hunter x Hunter Logo">Illumi Zoldyck</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/illumi.gif">
+                              <h3>Anime: Hunter x Hunter</h3>
+                              <span>
+                                Illumi Zoldyck is the eldest child of Silva and Kikyo Zoldyck. During the 287th Hunter Exam, 
+                                he appeared under the guise of Gittarackur. At Hisoka's request, Illumi joins the Phantom Troupe as Uvogin's replacement, becoming Troupe member #11.
+                              </span>
+                          </div>
+                      </li>
+
+
+                      <!-- JUJUTSU KAISEN CHARACTERS -->
+                      <li class="Itadori-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/jjk.png" alt="Jujutsu Kaisen Logo">Yuji Itadori</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/itadori.gif">
+                              <h3>Anime: Jujutsu Kaisen</h3>
+                              <span>
+                                Yuji Itadori is the main protagonist of the Jujutsu Kaisen series. He is the son of Jin Itadori and grandson of
+                                Wasuke Itadori who was living a normal life until her encountered Megumi and ate one of Sukuna's fingers. After becoming
+                                Sukuna's vessel, Yuji began attending Tokyo Jujutsu High alongside Megumi and Nobara as first-year students.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Megumi-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/jjk.png" alt="Jujutsu Kaisen Logo">Megumi Fushiguro</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/megumi.gif">
+                              <h3>Anime: Jujutsu Kaisen</h3>
+                              <span>
+                                Megumi Fushiguro is the deuteragonist of the Jujutsu Kaisen series. He is a first-year student at Tokyo Jujutsu High and
+                                also a descendant of the Zenin family.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Nobara-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/jjk.png" alt="Jujutsu Kaisen Logo">Nobara Kugisaki</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/nobara.gif">
+                              <h3>Anime: Jujutsu Kaisen</h3>
+                              <span>
+                                Nobara Kugisaki is the tritagonist of the Jujutsu Kaisen series. She is a first-year student and grade 3 jujutsu sorcerer
+                                at Tokyo Jujutsu High studying under Satoru Gojo alongside Yuji and Megumi.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Toge-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/jjk.png" alt="Jujutsu Kaisen Logo">Toge Inumaki</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/toge.gif">
+                              <h3>Anime: Jujutsu Kaisen</h3>
+                              <span>
+                                Toge Inumaki is a supporting character in the Jujutsu Kaisen series. He is a descendant of the Inumaki Family 
+                                who inherited the rare and powerful cursed speech technique. Toge is a second-year at Tokyo Jujutsu High alongside
+                                Yuta, Maki, and Panda.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Yuta-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/jjk.png" alt="Jujutsu Kaisen Logo">Yuta Okkotsu</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/yuta.gif">
+                              <h3>Anime: Jujutsu Kaisen</h3>
+                              <span>
+                                Yuta Okkotsu is the main protagonist of Jujutsu Kaisen's prequel series. He was initially a special grade cursed
+                                human haunted by his late childhood friend, Rika Orimoto. Satoru Goju mentored Yuta and enrolled him at Tokyo
+                                Jujutsu Hgh. Yuta is currently a second-year student at Jujutsu High where he works as a jujutsu sorcerer.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Gojo-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/jjk.png" alt="Jujutsu Kaisen Logo">Satoru Gojo</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/gojo.gif">
+                              <h3>Anime: Jujutsu Kaisen</h3>
+                              <span>
+                                Satoru Gojo is one of the main protagonists of Jujutsu Kaisen. He is a special grade jujutsu sorcerer and a teacher at
+                                Tokyo Jujutsu High.
+                              </span>
+                          </div>
+                      </li>
+
+                      <!-- NARUTO CHARACTERS -->
+                      <li class="Naruto-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/naruto.png" alt="Naruto">Naruto Uzumaki</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/naruto.gif">
+                              <h3>Anime: Naruto</h3>
+                              <span>
+                                Naruto Uzumaki is a shinobi of Konohagakure's Uzumaki clan. He became the jinchuriku of the Nine-Tailes on the day of his birth — a fate that caused him
+                                to be shunned by most of Konoha throughout his childhood. After joining Team Kakashi, Naruto worked hard to gain the village's 
+                                acknowledgement all the while chasing his dream to become Hokage.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Sasuke-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/naruto.png" alt="Naruto">Sasuke Uchiha</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/sasuke.gif">
+                              <h3>Anime: Naruto</h3>
+                              <span>
+                                 Sasuke Uchiha is one of the last surviving members of Konohagakure's Uchiha clan. After his older brother, Itachi,
+                                 slaughtered their clan, Sasuke made it his mission in life to avenge them by killing Itachi. He is added to Team 7
+                                 upon becoming a ninja and, through competition with his rival and best friend, Naruto Uzumaki, Sasuke starts
+                                 developing his skills.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Kakashi-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/naruto.png" alt="Naruto">Kakashi Hatake</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/kakashi.gif">
+                              <h3>Anime: Naruto</h3>
+                              <span>
+                                Kakashi Hatake is a shinobi of Konohagakure's Hatake clan. Famed as Kakashi of the Sharingan, he is one of Konoha's most
+                                talented ninja, regularly looked to for advice and leadership despite his personal dislike of responsibility.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Itachi-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/naruto.png" alt="Naruto">Itachi Uchiha</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/itachi.gif">
+                              <h3>Anime: Naruto</h3>
+                              <span>
+                                Itachi Uchiha was a shinobi of Konohagakure's Uchiha clan who served as an Anbu Captain. He later became an
+                                 international criminal after murdering his entire clan, sparing only his younger brother, Sasuke. 
+                                 He afterwards joined the international criminal organisation known as Akatsuki, whose activity brought
+                                  him into frequent conflict with Konoha and its ninja — including Sasuke who sought to avenge their clan by killing Itachi.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Sai-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/naruto.png" alt="Naruto">Sai Yamanaka</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/sai.gif">
+                              <h3>Anime: Naruto</h3>
+                              <span>
+                                Sai Yamanaka is the Anbu Chief of Konohagakure's Yamanaka clan. Prior to this, he was a Root member. 
+                                As per standard Root training, Sai was conditioned to remove all emotions and as such, had difficulty connecting
+                                 with others. When he is added to Team Kakashi as a replacement for the rogue Sasuke Uchiha, Sai begins to learn more
+                                  about people's feelings and tries to develop his personality and identity by forming genuine bonds and rediscovering the emotions he was taught to suppress.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Minato-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/naruto.png" alt="Naruto">Minato Namikaze</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/minato.gif">
+                              <h3>Anime: Naruto</h3>
+                              <span>
+                                Minato Namikaze was the Fourth Hokage of Konohagakure. He was renowned all over the world as Konoha's Yellow Flash. 
+                                He died during the Nine-Tailed Demon Fox's Attack, sacrificing his life to seal a part of the Nine-Tails into his newborn son, Naruto Uzumaki.
+                              </span>
+                          </div>
+                      </li>
+
+                      <!-- TOKYO GHOUL CHARACTERS -->
+                      <li class="Kaneki-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/tg.PNG" alt="Naruto">Kaneki Ken</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/kaneki.gif">
+                              <h3>Anime: Tokyo Ghoul</h3>
+                              <span>
+                                Kaneki Ken is the main protagonist of the Tokyo Ghoul Series. He is currently Touka Kirishima's husband, and the father of Ichika Kaneki.
+                                 Previously, he was a student who studied Japanese literature at Kamii University, living a relatively normal life. 
+                                 However, this quickly changed after Rize Kamishiro's kakuhou was transplanted into him and transformed him into a one-eyed ghoul. Kaneki is the first known artificial one-eyed ghoul.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Touka-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/tg.PNG" alt="Naruto">Touka Kirishima</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/touka.gif">
+                              <h3>Anime: Tokyo Ghoul</h3>
+                              <span>
+                                Touka Kirishima is a ghoul who is an ex-waitress at Anteiku.
+                                 She is the daughter of Arata Kirishima and Hikari Kirishima, the older sister of Ayato Kirishima, 
+                                 the wife of Ken Kaneki and the mother of Ichika Kaneki.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Amon-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/tg.PNG" alt="Naruto">Koutarou Amon</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/amon.gif">
+                              <h3>Anime: Tokyo Ghoul</h3>
+                              <span>
+                                Koutarou Amon is a former First Class Ghoul Investigator. He was Kureo Mado's last partner and
+                                 his last partner was Akira Mado. He was subsequently declared dead by the CCG, though his body was
+                                  never recovered, and was posthumously promoted to Special Class for his distinguished service.
+                                   During the Rushima Landing Operation, he reappeared alive as an artificial one-eyed ghoul.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Juuzou-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/tg.PNG" alt="Naruto">Juuzou Suzuya</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/juuzou.gif">
+                              <h3>Anime: Tokyo Ghoul</h3>
+                              <span>
+                                Juuzou Suzuya is a Special Class Ghoul Investigator. In the past, he went by the name Rei Suzuya. 
+                                He was first partnered with Yukinori Shinohara, and is now currently the leader of Suzuya Squad.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Akira-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/tg.PNG" alt="Naruto">Akira Mado</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/akira.gif">
+                              <h3>Anime: Tokyo Ghoul</h3>
+                              <span>
+                                Akira Mado is a former Associate Special Class Ghoul Investigator, the mentor of Haise Sasaki
+                                 and the daughter of Kureo Mado and Kasuka Mado who was previously partnered with Koutarou Amon.
+                              </span>
+                          </div>
+                      </li>
+                      <li class="Ayato-info" style="display: none">
+                        <div class="collapsible-header"><img height="25" width="25" src="imgs/tg.PNG" alt="Naruto">Ayato Kirishima</div>
+                        <div class="collapsible-body">
+                              <img class="collapse-image" src="imgs/ayato.gif">
+                              <h3>Anime: Tokyo Ghoul</h3>
+                              <span>
+                                Ayato Kirishima is Touka Kirishima's younger brother and goes by the alias Black Rabbit.
+                              </span>
+                          </div>
+                      </li>
+            
+                  </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME TAB -->
+    <div id="home">
+        <h2 class="center white-text">Welcome to Anime Characters!</h2>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="imgs/itachi.png"></a>
+            <a class="carousel-item" href="#two!"><img src="imgs/inumaki.png"></a>
+            <a class="carousel-item" href="#three!"><img src="imgs/kaneki.png"></a>
+            <a class="carousel-item" href="#four!"><img src="imgs/killua.png"></a>
+        </div>
+        <div class="logged-out">
+            <h3 class="center white-text">Please Log In or Sign Up to get started!</h3>
+        </div>
+        <div class="logged-in">
+            <h3 class="center white-text">Browse popular Anime characters using the tabs above!</h3>
+            <p class="center white-text">See a character you like? Use the Star icon to favorite it! View your favorites by clicking My Favorites!</p>
+        </div>
+    </div> 
+
+    <!-- ATTACK ON TITAN TAB -->
+    <div id="aot">
+        <h2 class="center white-text">Attack on Titan</h2>
+        <div class="row">
+            <!-- Eren Jaeger -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/eren.jpg" alt="Eren Jaeger" id="eren" onmouseover="imgs/eren2.gif" onmouseout="imgs/eren.jpg">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Eren Jaeger</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Eren-like" value="Eren"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mikasa Ackermann -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/mikasa.jpg" alt="Mikasa Ackermann" id="mikasa" onmouseover="imgs/mikasa2.gif" onmouseout="imgs/mikasa.jpg">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Mikasa Ackermann</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Mikasa-like" value="Mikasa"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Armin Arlelt -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/armin.jpg" alt="Armin Artlelt" id="armin" onmouseover="imgs/armin2.gif" onmouseout="imgs/armin.jpg">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Armin Artlelt</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Armin-like" value="Armin"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Levi Ackermann -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/levi.jpg" alt="Levi Ackermann" id="levi" onmouseover="imgs/levi2.gif" onmouseout="imgs/levi.jpg">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Levi Ackermann</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Levi-like" value="Levi"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Annie Leonhart -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/annie.gif" alt="Annie Leonhart" id="annie" onmouseover="imgs/annie2.gif" onmouseout="imgs/annie.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Annie Leonhart</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Annie-like" value="Annie"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Historia Reiss -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/historia.jpg" alt="Historia Reiss" id="historia" onmouseover="imgs/historia2.gif" onmouseout="imgs/historia.jpg">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Historia Reiss</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Historia-like" value="Historia"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- HUNTER X HUNTER TAB -->
+    <div id="hxh">
+        <h2 class="center white-text">Hunter x Hunter</h2>
+        <!-- Gon Freecs -->
+        <div class="row">
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/gon.jpg" alt="Gon Freecs" id="gon" onmouseover="imgs/gon2.gif" onmouseout="imgs/gon.jpg">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Gon Freecs</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Gon-like" value="Gon"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- Killua Zoldyck -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/godspeedstatic.gif" alt="Killua Zoldyck" id="godspeed" onmouseover="imgs/godspeed.gif" onmouseout="imgs/godspeedstatic.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Killua Zoldyck</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Killua-like" value="Killua"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- Kurapika Kurta -->
+        <div class="col s2">
+            <div class="card medium">
+                <div class="card-image">
+                    <img class="col s12" src="imgs/kurapika.gif" alt="Kurapika Kurta" id="kurapika" onmouseover="imgs/kurapika2.gif" onmouseout="imgs/kurapika.gif">
+                </div>
+                <div class="card-content center">
+                    <h5>Kurapika Kurta</h5>
+                </div>
+                <div class="card-action center">
+                   <button class="btn favorites Kurapika-like" value="Kurapika"><i class="material-icons">favorite_border</i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leorio Paradinight -->
+        <div class="col s2">
+            <div class="card medium">
+                <div class="card-image">
+                    <img class="col s12" src="imgs/leorio.png" alt="Leorio Paradinight" id="leorio" onmouseover="imgs/leorio2.gif" onmouseout="imgs/leorio.png">
+                </div>
+                <div class="card-content center">
+                    <h5>Leorio Paradinight</h5>
+                </div>
+                <div class="card-action center">
+                   <button class="btn favorites Leorio-like" value="Leorio"><i class="material-icons">favorite_border</i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hisoka Morow -->
+        <div class="col s2">
+            <div class="card medium">
+                <div class="card-image">
+                    <img class="col s12" src="imgs/hisoka.gif" alt="Hisoka Morow" id="hisoka" onmouseover="imgs/hisoka2.gif" onmouseout="imgs/hisoka.gif">
+                </div>
+                <div class="card-content center">
+                    <h5>Hisoka Morow</h5>
+                </div>
+                <div class="card-action center">
+                   <button class="btn favorites Hisoka-like" value="Hisoka"><i class="material-icons">favorite_border</i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Illumi Zoldyck -->
+        <div class="col s2">
+            <div class="card medium">
+                <div class="card-image">
+                    <img class="col s12" src="imgs/illumi.gif" alt="Illumi Zoldyck" id="illumi" onmouseover="imgs/illumi2.gif" onmouseout="imgs/illumi.gif">
+                </div>
+                <div class="card-content center">
+                    <h5>Illumi Zoldyck</h5>
+                </div>
+                <div class="card-action center">
+                   <button class="btn favorites Illumi-like" value="Illumi"><i class="material-icons">favorite_border</i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        
+    </div>
+
+    <!-- JUJUTSU KAISEN TAB -->
+    <div id="jjk">
+        <h2 class="center white-text">Jujutsu Kaisen</h2>
+        
+        <div class="row">
+            <!-- Yuji Itadori -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/itadori.gif" alt="Yuji Itadori" id="itadori" onmouseover="imgs/itadori2.gif" onmouseout="imgs/itadori.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Yuji Itadori</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Itadori-like" value="Itadori"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Megumi Fushiguro -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/megumi.gif" alt="Megumi Fushiguro" id="megumi" onmouseover="imgs/megumi2.gif" onmouseout="imgs/megumi.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Megumi Fushiguro</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Megumi-like" value="Megumi"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Nobara Kugisaki -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/nobara.gif" alt="Nobara Kugisaki" id="nobara" onmouseover="imgs/nobara2.gif" onmouseout="imgs/nobara.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Nobara Kugisaki</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Nobara-like" value="Nobara"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Toge Inumaki -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/toge.gif" alt="Toge Inumaki" id="toge" onmouseover="imgs/toge2.gif" onmouseout="imgs/toge.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Toge Inumaki</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Toge-like" value="Toge"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Yuta Okkotsu -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/yuta.gif" alt="Yuta Okkotsu" id="yuta" onmouseover="imgs/yuta2.gif" onmouseout="imgs/yuta.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Yuta Okkotsu</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Yuta-like" value="Yuta"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Satoru Gojo -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/gojo.gif" alt="Satoru Gojo" id="gojo" onmouseover="imgs/gojo2.gif" onmouseout="imgs/gojo.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Satoru Gojo</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Gojo-like" value="Gojo"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NARUTO TAB -->
+    <div id="naruto">
+        <h2 class="center white-text">Naruto</h2>
+        <div class="row">
+            <!-- Naruto Uzumaki -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/naruto.gif" alt="Naruto Uzumaki" id="naruto-img" onmouseover="imgs/naruto2.gif" onmouseout="imgs/naruto.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Naruto Uzumaki</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Naruto-like" value="Naruto"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Sasuke Uchiha -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/sasuke.gif" alt="Sasuke Uchiha" id="sasuke" onmouseover="imgs/sasuke2.gif" onmouseout="imgs/sasuke.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Sasuke Uchiha</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Sasuke-like" value="Sasuke"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Kakashi Hatake -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/kakashi.gif" alt="Kakashi Hatake" id="kakashi" onmouseover="imgs/kakashi2.gif" onmouseout="imgs/kakashi.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Kakashi Hatake</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Kakashi-like" value="Kakashi"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Itachi Uchiha -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/itachi.gif" alt="Itachi Uchiha" id="itachi" onmouseover="imgs/itachi2.gif" onmouseout="imgs/itachi.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Itachi Uchiha</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Itachi-like" value="Itachi"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Sai Yamanaka -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/sai.gif" alt="Sai Yamanaka" id="sai" onmouseover="imgs/sai2.gif" onmouseout="imgs/sai.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Sai Yamanaka</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Sai-like" value="Sai"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Minato Namikaze -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/minato.gif" alt="Minato Namikaze" id="minato" onmouseover="imgs/minato2.gif" onmouseout="imgs/minato.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Minato Namikaze</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Minato-like" value="Minato"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- TOKYO GHOUL TAB -->
+    <div id="tg">
+        <h2 class="center white-text">Tokyo Ghoul</h2>
+        <div class="row">
+            <!-- Kaneki Ken -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/kaneki.gif" alt="Kaneki Ken" id="kaneki" onmouseover="imgs/kaneki2.gif" onmouseout="imgs/kaneki.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Kaneki Ken</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Kaneki-like" value="Kaneki"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Touka Kirishima -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/touka.gif" alt="Touka Kirishima" id="touka" onmouseover="imgs/touka2.gif" onmouseout="imgs/touka.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Touka Kirishima</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Touka-like" value="Touka"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Koutarou Amon -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/amon.gif" alt="Koutarou Amon" id="amon" onmouseover="imgs/amon2.gif" onmouseout="imgs/amon.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Koutarou Amon</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Amon-like" value="Amon"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Juuzou Suzuya -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/juuzou.gif" alt="Juuzou Suzuya" id="juuzou" onmouseover="imgs/juuzou2.gif" onmouseout="imgs/juuzou.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Juuzou Suzuya</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Juuzou-like" value="Juuzou"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Akira Mado -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/akira.gif" alt="Akira Mado" id="akira" onmouseover="imgs/akira2.gif" onmouseout="imgs/akira.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Akira Mado</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Akira-like" value="Akira"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ayato Kirishima -->
+            <div class="col s2">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img class="col s12" src="imgs/ayato.gif" alt="Ayato Kirishima" id="ayato" onmouseover="imgs/ayato2.gif" onmouseout="imgs/ayato.gif">
+                    </div>
+                    <div class="card-content center">
+                        <h5>Ayato Kirishima</h5>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn favorites Ayato-like" value="Ayato"><i class="material-icons">favorite_border</i></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- Firebase Initialization -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+        import { getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyBU9XBcob92fQ6Lm6jkW8fD9MpUhCNPmxg",
+        authDomain: "anime-characters-6e35e.firebaseapp.com",
+        projectId: "anime-characters-6e35e",
+        storageBucket: "anime-characters-6e35e.appspot.com",
+        messagingSenderId: "512369492622",
+        appId: "1:512369492622:web:c0ba945267fbc7f7143fdf",
+        measurementId: "${config.measurementId}"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        // Authorization Reference
+        const auth = getAuth(app);
+
+        // Firestore Reference
+        const db = getFirestore(app);
+
+        // Authentication
+
+        // Sign Up
+        const signupForm = document.querySelector('#signup-form');
+
+        signupForm.addEventListener('submit', (e) => {
+            // Prevent Page Refresh
+            e.preventDefault();
+
+            // User Information
+            const email = signupForm['signup-email'].value;
+            const password = signupForm['signup-password'].value;
+
+            // Sign Up User With Info (Asynchronous)
+            createUserWithEmailAndPassword(auth, email, password)
+            .then(cred => {
+                console.log(cred);
+                const modal = document.querySelector('#modal-signup');
+                M.Modal.getInstance(modal).close();
+                signupForm.reset();
+                setDoc(doc(db, "users", email), {
+                    email: email,
+                    uid: cred.user.uid,
+                    favorites: []
+                });
+            });
+
+            // Alert User
+            M.toast({html: 'Account created successfully.'});
+        });           
+
+        // Log In
+        const loginForm = document.querySelector('#login-form');
+
+        loginForm.addEventListener('submit', (e) => {
+            // Prevent Page Refresh
+            e.preventDefault();
+
+            // User Information
+            const email = loginForm['login-email'].value;
+            const password = loginForm['login-password'].value;
+            
+            // Sign In Attempt
+            signInWithEmailAndPassword(auth, email, password)
+            .then(cred => {
+                const modal = document.querySelector('#modal-login');
+                M.Modal.getInstance(modal).close();
+                loginForm.reset();
+            });
+
+            // Alert User
+            M.toast({html: 'Signed in!'});
+        });
+
+        // Log Out
+        const logout = document.querySelector('#logout');
+
+        logout.addEventListener('click', (e) => {
+            // Prevent Refresh
+            e.preventDefault();
+
+            // Sign Out
+            signOut(auth);
+
+            // Alert User
+            M.toast({html: 'Signed out successfully.'});
+        });
+
+        // Monitoring Authentication State Changes
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User Signed In
+                
+                // Set User Database Path
+                const docRef = doc(db, "users", user.email);
+
+                // Display proper divs and navigation elements
+                document.querySelectorAll('.logged-in').forEach((item) => {
+                    item.setAttribute('style', 'display: inital');
+                });
+                document.querySelectorAll('.logged-out').forEach((item) => {
+                    item.setAttribute('style', 'display: none');
+                });
+
+                // Reading information from users' liked lists
+                const user_favorites = getDoc(docRef)
+                .then((e) => {
+                    // Displaying like buttons properly. If you have liked characters on your account already, the like button will reflect that.
+                    e.data().favorites.forEach((fave) => {
+                        const liked = document.querySelector('.' + fave + "-like");
+                        liked.innerHTML = '<i class="material-icons favorites">favorite</i>';
+
+                        // Displaying User Favorites list
+                        const info = document.querySelector('.' + fave + "-info");
+                        info.setAttribute('style', 'display: initial');
+                    })
+                });
+
+
+                // Adding to User Favorites List
+                document.querySelectorAll('.favorites').forEach((fave) => {
+                fave.addEventListener('click', (e) => {
+                    if(fave.innerText === "favorite"){
+                        // User has favorited this character
+                        // Add this character to favorites array
+                        updateDoc((docRef), {
+                            favorites: arrayUnion(fave.value)
+                        });
+                        // Display this character on My Favorites list
+                        const show_info = document.querySelector('.' + fave.value + "-info");
+                        show_info.setAttribute('style', 'display: initial');                        
+                    } else {
+                        // User has unfavorited this character
+                        // Remove this character from the favorites array
+                        updateDoc((docRef), {
+                            favorites: arrayRemove(fave.value)
+                        });
+                        // Remove this character from My Favorites list
+                        const show_info = document.querySelector('.' + fave.value + "-info");
+                        show_info.setAttribute('style', 'display: none');
+                        }
+                    });
+                });
+
+                
+            }
+            else {
+                // User Signed Out
+                document.querySelectorAll('.logged-out').forEach((item) => {
+                    item.setAttribute('style', 'display: inital');
+                });
+                document.querySelectorAll('.logged-in').forEach((item) => {
+                    item.setAttribute('style', 'display: none');
+                });
+            }
+        });
+    </script>
+    <!-- Materialize JS -->
+    <script src="js/materialize.min.js"></script>
+
+    <!-- SW Registration -->
+    <script src="js/register.js"></script>
+
+    <!-- Index JS -->
+    <script src="js/index.js"></script>
+
+  </body>
+      
+<!-- Footer -->
+
+<!-- ./Footer -->
+</html>

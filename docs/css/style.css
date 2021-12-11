@@ -1,0 +1,13 @@
+.card-image {
+    height: fit-content;
+    width: fit-content;
+}
+
+.collapse-image {
+    width: 25%;
+    height: auto;
+}
+
+.tabs {
+    padding-bottom: 3.5em;
+}
