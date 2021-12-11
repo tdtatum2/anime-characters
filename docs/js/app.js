@@ -1,8 +1,6 @@
 if ('serviceWorker' in navigator) {
-    console.log("In.");
     window.addEventListener("load", () => {
-        console.log("Loaded.");
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('/sw.js', {scope:'./anime-characters/'})
         .then((reg) => {
             // This message displays when SW registration is successful.
             console.log('Registration succeeded. Scope is ' + reg.scope);
@@ -11,7 +9,6 @@ if ('serviceWorker' in navigator) {
             console.log('Registration failed with ' + error);
         });
     });
-    console.log("Finished.");
 } else {
     console.log("Service Worker unavailable.");
 }
