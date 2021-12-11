@@ -11,6 +11,7 @@ if ('serviceWorker' in navigator) {
             console.log('Registration failed with ' + error);
         });
     });
+    console.log("Finished.");
 } else {
     console.log("Service Worker unavailable.");
 }
