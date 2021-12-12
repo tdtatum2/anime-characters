@@ -1043,10 +1043,14 @@
                 const modal = document.querySelector('#modal-login');
                 M.Modal.getInstance(modal).close();
                 loginForm.reset();
+                // Alert User
+                M.toast({html: 'Signed in!'});
+            }).catch((error) => {
+                M.toast({html: 'Invalid input. Please try again!'});
+                console.log("Error signing in: " + error);
             });
 
-            // Alert User
-            M.toast({html: 'Signed in!'});
+            
         });
 
         // Log Out
